@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.example</groupId>
-    <artifactId>inscription_authentification_module</artifactId>
+    <artifactId>user_module</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

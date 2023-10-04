@@ -15,7 +15,7 @@
 	<name>socialmedia-app</name>
 	<description>Demo project for Spring Boot</description>
 	<modules>
-		<module>inscription_authentification_module</module>
+		<module>user_module</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>

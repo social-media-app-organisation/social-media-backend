@@ -8,11 +8,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "user")
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
+@AllArgsConstructor @NoArgsConstructor @Getter @Setter
 public class User {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
@@ -26,4 +22,11 @@ public class User {
     private Gender gender;
     private String password;
     private String bio;
+
+    @OneToOne(fetch = FetchType.EAGER , mappedBy = "user")
+    private UserMedia userMedia;
+
+    @ManyToOne(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
+    @JoinColumn(name = "role_id",nullable = false)
+    private Role role;
 }

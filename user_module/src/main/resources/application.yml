@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  tomcat :
+    accesslog :
+      enabled : true
+spring:
+  application:
+    name: user_module
+  datasource:
+    password: oAwfWp6bCKbvNKT0uKhj5WSPe3bg4GbV
+    url: jdbc:postgresql://dpg-cehfvjh4reb94c1qag30-a.frankfurt-postgres.render.com:5432/socialmediadb_0kwl
+    username: socialmediadb_0kwl_user
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true

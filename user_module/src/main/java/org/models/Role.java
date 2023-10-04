@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter @Getter
+@NoArgsConstructor @AllArgsConstructor @Setter @Getter
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
